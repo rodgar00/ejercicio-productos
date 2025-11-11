@@ -13,7 +13,7 @@ class Product:
     @staticmethod
     def is_valid_text(name):
         if name.isnumeric():
-            raise ValueError("El nombre del producto puede ser un número")
+            raise ValueError("El nombre del producto no puede ser un número")
         if name is None:
             raise ValueError("El nombre del producto no puede estar vacío")
         if len(name) < 3:
